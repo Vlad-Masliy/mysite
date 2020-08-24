@@ -1,0 +1,33 @@
+<!DOCTYPE HTML >
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title >Обзор книг</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+ </head>
+ <body>
+  <div class="jumbotron">
+   <div class="container">
+    {% include "mainApp/includes/books.html" %}
+   </div>
+  </div>
+
+  <div class="container">
+    <h1>Main Page + content</h1>
+  </div>
+
+   <div class="jumbotron">
+     <div class="container">
+    {% block content %}
+    {% endblock %}    
+    <p>          
+      <a href="/" class="btn btn-success btn-lg">Home page &raquo;</a>
+      <a href="/news" class="btn btn-danger btn-lg">news &raquo;</a>
+      <!-- <a href="/adress" class="btn btn-primary btn-lg">adress &raquo;</a>     -->
+      <a href="/contact" class="btn btn-info btn-lg">contacts </a> 
+    </p>
+    </div>
+  </div>
+ </body>
+</html>

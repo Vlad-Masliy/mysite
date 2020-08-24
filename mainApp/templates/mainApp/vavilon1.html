@@ -1,0 +1,9 @@
+{% extends "mainApp/wrapper.html" %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+
+{% block content %}
+ <a href="/"><img src="{% static 'mainApp/images/Vavilon.jpg' %}"  title="Home Page"
+ class="img-thumbail"></a> 
+<p>This book about ...</p>
+{% endblock %}
