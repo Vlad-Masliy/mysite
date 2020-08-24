@@ -23,5 +23,5 @@ urlpatterns = [
     url('news/', include('news.urls')),
 #    url('^contacts/', include('mainApp.urls')),
 #    path('mainApp/', include('mainApp.urls')),
-    path('webexample/', include('webexample.urls')),
+#    path('webexample/', include('webexample.urls')),
 ]
